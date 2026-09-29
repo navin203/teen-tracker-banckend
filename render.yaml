@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: teentrack-backend
+    runtime: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        value: https://mcasecvrqjxpbqgkixgb.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: sb_publishable_onX1p_ypH3nDqNGI2Iurdg_K6aNuzin
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: RATE_LIMIT_WINDOW_MS
+        value: "900000"
+      - key: RATE_LIMIT_MAX_REQUESTS
+        value: "500"

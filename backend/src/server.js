@@ -4,7 +4,7 @@ import { logger } from './utils/logger.js';
 
 const PORT = config.port;
 
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT, '0.0.0.0', () => {
   logger.info(`TeenTrack Backend Server running in [${config.nodeEnv}] mode on port ${PORT}`);
   logger.info(`Health check endpoint: http://localhost:${PORT}/api/health`);
   logger.info(`API Base URL: http://localhost:${PORT}/api`);
