@@ -1,5 +1,7 @@
 # TeenTrack – Smart Teen Expense Tracker 🚀
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/navin203/teen-tracker-banckend)
+
 TeenTrack is a modern, responsive full-stack expense tracking and financial literacy application designed specifically for teenagers and students.
 
 ## ✨ Features
